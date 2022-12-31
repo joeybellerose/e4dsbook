@@ -93,4 +93,4 @@ RUN echo "$PWD"
 
 # USER nobody
 
-CMD ["livebook", "server"]
+# CMD ["livebook", "server"]
