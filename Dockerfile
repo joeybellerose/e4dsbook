@@ -26,7 +26,7 @@ RUN git clone https://github.com/joeybellerose/e4dsbook
 WORKDIR "/e4dsbook"
 RUN echo "$PWD"
 
-EXPOSE 8080
+EXPOSE 8080:8080
 
 # install hex + rebar
 # RUN mix local.hex --force && \
