@@ -93,4 +93,4 @@ RUN echo "$PWD"
 
 # USER nobody
 
-# CMD ["/elixir4ds/_build/prod/rel/elixir4ds/bin/elixir4ds", "start"]
+CMD ["livebook", "server"]
