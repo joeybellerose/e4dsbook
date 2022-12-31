@@ -21,12 +21,13 @@ RUN apt-get update -y && apt-get install -y build-essential git \
 # prepare build dir
 # WORKDIR /app
 COPY . /code
+EXPOSE 8080:8080
 RUN git clone https://github.com/joeybellerose/e4dsbook
 
 WORKDIR "/e4dsbook"
 RUN echo "$PWD"
 
-EXPOSE 8080:8080
+
 
 # install hex + rebar
 # RUN mix local.hex --force && \
