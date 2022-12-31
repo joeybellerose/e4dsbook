@@ -23,8 +23,10 @@ RUN apt-get update -y && apt-get install -y build-essential git \
 COPY . /code
 RUN git clone https://github.com/joeybellerose/e4dsbook
 
-WORKDIR "/elixir4ds"
+WORKDIR "/e4dsbook"
 RUN echo "$PWD"
+
+EXPOSE 8080
 
 # install hex + rebar
 # RUN mix local.hex --force && \
