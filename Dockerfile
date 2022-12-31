@@ -21,8 +21,8 @@ RUN apt-get update -y && apt-get install -y build-essential git \
 # prepare build dir
 # WORKDIR /app
 COPY . /code
-EXPOSE 8080
-EXPOSE 8081
+EXPOSE 80:8080
+EXPOSE 81:8081
 RUN git clone https://github.com/joeybellerose/e4dsbook
 
 WORKDIR "/e4dsbook"
